@@ -1,7 +1,5 @@
 # React 性能优化 - memo 
 
-## memo
-
 在React项目中，在含有父子组件的页面中，我们会遇到，父组件的属性修改了，子组件的属性并没有修改，但是还是会被重新Render。这时我们需要缓存一些内容，以避免在需渲染过程中因大量不必要的耗时计算而导致的性能问题。
 
 ``` js
@@ -10,7 +8,7 @@ const Child = () => {
   return <div />;
 };
 
-const UseMemo = () => {
+const Parent = () => {
   const [count, setCount] = useState(0);
   return (
     <>
@@ -27,18 +25,15 @@ React 提供了 memo 来解决这样的场景。将子组件放在 React.memo �
 
 如下 Child 组件只依赖父组件传入的count 并使用 memo 包裹，这时点击 Add Value 按钮 Child 组件并**不会重新渲染**。
 
-```js
+```jsx
 const Child = memo((props) => {
   console.log('child render');
   return <div>{props.count}</div>;
 });
 
-const UseMemo = () => {
+const Parent = () => {
   const [count, setCount] = useState(0);
   const [value, setValue] = useState(0);
-  const cachedValue = useMemo(() => {
-    return count + 1;
-  }, [count]);
 
   return (
     <>
@@ -54,21 +49,16 @@ const UseMemo = () => {
 
 如下子组件比上面多依赖了一个函数，但是这时点击 Add Value 按钮 Child 组件将**重新渲染**。
 
-```js
+```jsx
 const Child = memo((props) => {
   console.log('render Con');
   return <div>{props.count}</div>;
 });
 
-const UseMemo = () => {
+const Parent = () => {
   const [count, setCount] = useState(0);
   const [value, setValue] = useState(0);
-  const cachedValue = useMemo(() => {
-    return count + 1;
-  }, [count]);
-  const handleClick = () => {
-    console.log(cachedValue);
-  };
+  const handleClick = () => {};
 
   return (
     <>

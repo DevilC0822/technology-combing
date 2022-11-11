@@ -1,6 +1,4 @@
-# useEffect
-
-## useEffect 简介
+# useEffect 和 useLayoutEffect
 
 `useEffect` 在 React 组件渲染后执行某些操作且在每次重新渲染后执行
 

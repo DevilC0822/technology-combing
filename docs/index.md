@@ -14,7 +14,7 @@ hero:
       link: /react/useEffect和useLayoutEffect
     - theme: alt
       text: View on GitHub
-      link: https://gitee.com/geeksdidi
+      link: https://github.com/DevilC0822/technology-combing
 
 features:
   - icon: ⚡️

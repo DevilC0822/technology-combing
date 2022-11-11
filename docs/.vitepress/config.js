@@ -1,5 +1,6 @@
 module.exports = {
-  base: '/',
+  // base: '/',
+  base: '/technology-combing/',
   title: '知识归纳',
   description: 'github page blog',
   lang: 'zh-CN',
@@ -12,17 +13,12 @@ module.exports = {
   ],
   themeConfig: {
     logo: "/logo.svg",
-    repo: 'wushijiang13/vue3-vite-cli',
-    repoLabel: '测试',
     docsDir: 'docs',
-    docsBranch: 'master',
-    editLinks: true,
-    editLinkText: '欢迎帮助我们改善页面!',
-    lastUpdated: '最近更新时间',
     nav: [
       { text: "博客", link: "/react/useEffect和useLayoutEffect" },
-      { text: "GuideTest", link: "/guide/test" },
-      { text: "gitee", link: "https://gitee.com/geeksdidi" },
+    ],
+    socialLinks: [
+      { icon: "github", link: "https://github.com/DevilC0822" },
     ],
     sidebar: {
       "/react/": [
