@@ -31,7 +31,11 @@ module.exports = {
             {
               text: "React 性能优化 - memo",
               link: "/react/React 性能优化 - memo"
-            }
+            },
+            {
+              text: "React中的双向绑定、条件渲染和列表渲染",
+              link: "/react/React中的双向绑定、条件渲染和列表渲染"
+            },
           ],
         },
       ]
