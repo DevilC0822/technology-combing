@@ -36,9 +36,18 @@ module.exports = {
               text: "React中的双向绑定、条件渲染和列表渲染",
               link: "/react/React中的双向绑定、条件渲染和列表渲染"
             },
+          ],
+        },
+        {
+          text: "React云音乐项目",
+          items: [
             {
               text: "React - 云音乐项目简介",
               link: "/react/React - 云音乐项目简介"
+            },
+            {
+              text: "React云音乐项目 - axios封装",
+              link: "/react/React云音乐项目 - axios封装"
             },
           ],
         },
