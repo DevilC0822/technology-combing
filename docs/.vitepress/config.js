@@ -1,6 +1,6 @@
 module.exports = {
-  // base: '/',
-  base: '/technology-combing/',
+  base: '/',
+  // base: '/technology-combing/',
   title: '知识归纳',
   description: 'github page blog',
   lang: 'zh-CN',
@@ -43,11 +43,19 @@ module.exports = {
           items: [
             {
               text: "React - 云音乐项目简介",
-              link: "/react/React - 云音乐项目简介"
+              link: "/react/cloudMusic/React - 云音乐项目简介"
+            },
+            {
+              text: "React云音乐项目 - 项目初始化",
+              link: "/react/cloudMusic/React云音乐项目 - 项目初始化"
             },
             {
               text: "React云音乐项目 - axios封装",
-              link: "/react/React云音乐项目 - axios封装"
+              link: "/react/cloudMusic/React云音乐项目 - axios封装"
+            },
+            {
+              text: "React云音乐项目 - 路由统一管理",
+              link: "/react/cloudMusic/React云音乐项目 - 路由统一管理"
             },
           ],
         },

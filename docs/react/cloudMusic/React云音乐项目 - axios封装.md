@@ -7,12 +7,12 @@
 ## 开始使用
 
 ```sh
-npm install axios
+pnpm add axios
 ```
 
 ## 基本配置项封装
 
-再 src 目录下新建 service 文件夹，新建 index.ts 文件。
+在 src 目录下新建 service 文件夹，新建 index.ts 文件。
 
 ```typescript
 // 设置请求头和请求路径
@@ -177,15 +177,15 @@ export interface IVerifyCaptcha {
 
 **入参少传入时**
 
-![入参少传入时](../public/img/axios封装/入参少传入时.png)
+![入参少传入时](../../public/img/axios封装/入参少传入时.png)
 
 **传入未定义的入参**
 
-![传入未定义的入参](../public/img/axios封装/传入未定义的入参.png)
+![传入未定义的入参](../../public/img/axios封装/传入未定义的入参.png)
 
 **提示入参类型**
 
-![提示入参类型](../public/img/axios封装/提示入参类型.png)
+![提示入参类型](../../public/img/axios封装/提示入参类型.png)
 
 
 ## nprogress
@@ -199,13 +199,13 @@ nprogress 是一个类似 youtube、Medium 等网站上的小进度条插件。�
 安装 nprogress
 
 ```sh
-npm install --save nprogress 
+pnpm add nprogress 
 ```
 
 安装 @types/nprogress 
 
 ```sh
-npm install --save @types/nprogress
+pnpm add @types/nprogress
 ```
 
 ### nprogress 配置
@@ -273,7 +273,7 @@ const service: Service = {
 
 此时，从 config 中解构 needLoadingBar 时会出现以下错误。
 
-![未添加自定义属性](../public/img/axios封装/未添加自定义属性.png)
+![未添加自定义属性](../../public/img/axios封装/未添加自定义属性.png)
 
 **解决方案**
 
