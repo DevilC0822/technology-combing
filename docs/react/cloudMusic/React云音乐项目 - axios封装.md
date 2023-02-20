@@ -177,15 +177,15 @@ export interface IVerifyCaptcha {
 
 **入参少传入时**
 
-![入参少传入时](../../img/axios封装/入参少传入时.png)
+![入参少传入时](/img/axios封装/入参少传入时.png)
 
 **传入未定义的入参**
 
-![传入未定义的入参](../../img/axios封装/传入未定义的入参.png)
+![传入未定义的入参](/img/axios封装/传入未定义的入参.png)
 
 **提示入参类型**
 
-![提示入参类型](../../img/axios封装/提示入参类型.png)
+![提示入参类型](/img/axios封装/提示入参类型.png)
 
 
 ## nprogress
@@ -273,7 +273,7 @@ const service: Service = {
 
 此时，从 config 中解构 needLoadingBar 时会出现以下错误。
 
-![未添加自定义属性](../../img/axios封装/未添加自定义属性.png)
+![未添加自定义属性](/img/axios封装/未添加自定义属性.png)
 
 **解决方案**
 
