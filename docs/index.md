@@ -4,7 +4,7 @@ layout: home
 hero:
   name: VitePress
   text: Vite 和 Vue 支持的静态站点生成器
-  tagline: 每周前端技术分享
+  tagline: 前端技术归纳
   image:
     src: /logo.png
     alt: VitePress
@@ -34,7 +34,7 @@ features:
     title: Vue
     details: Vue 是一套用于构建用户界面的渐进式框架。
   - icon: 🐧
-    title: 这是一个闪电图标
+    title: 企鹅
     details: Vite是一种新型前端构建工具，能够显著提升前端开发体验。
 
 ---

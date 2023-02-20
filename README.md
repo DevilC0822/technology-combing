@@ -1,1 +1,3 @@
-# 每周前端技术分享
+# 前端技术归纳
+
+部署于 [Vercel](https://vercel.com/)
