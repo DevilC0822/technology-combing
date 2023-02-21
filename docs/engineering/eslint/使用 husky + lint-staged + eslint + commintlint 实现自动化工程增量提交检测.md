@@ -408,7 +408,7 @@ package.json 中新增如下内容：
 生成 pre-commit 钩子文件
 
 ```shell
-npx husky add .husky/commit-msg 'yarn commitlint --edit "$1"'
+npx husky add .husky/commit-msg 'npx commitlint --edit "$1"'
 // 如果不生效请使用yarn
 yarn husky add .husky/commit-msg 'yarn commitlint --edit "$1"'
 ```
@@ -520,16 +520,19 @@ const type = [
 
 subject 任意，: 为英文半角符号，后跟空格。
 
-## 已知问题
+## 可能遇到的问题
 
-最后由于某些未知原因导致在 husky 钩子中使用 npm 命令，会出现乱码的情况：
+由于某些未知原因导致在 husky 钩子中使用 npm 命令，会出现乱码的情况：
 
 ![question](./img/question.png)
 
-因此暂时先使用 yarn 在 husky 钩子中执行命令。
+使用 chcp 65001 转码执行 lint-staged 命令出现非乱码错误。
 
-全局安装 yarn 
+![chcp](./img/chcp.png)
 
-```shell
-npm i yarn -g
-```
+![jiema](./img/jiema.png)
+
+但是在正常情况下npm run eslint 就没问题 然后在git hook中运行npm run eslint 就报错。
+最后解决方法是将 node环境系统变量调至第一位在重启ide解决。
+
+![settingTop1](./img/settingTop1.png)
