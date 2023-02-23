@@ -12,11 +12,11 @@ module.exports = {
   themeConfig: {
     logo: "/logo.svg",
     docsDir: 'docs',
-    // algolia: {
-    //   appId: '...',
-    //   apiKey: '...',
-    //   indexName: '...'
-    // },
+    algolia: {
+      appId: '7ELKSF335Z',
+      apiKey: 'c0d810394554293315863bc9acba7124',
+      indexName: 'constj'
+    },
     nav: [
       { text: "vue", link: "/vue/vue" },
       { text: "React", link: "/react/useEffect和useLayoutEffect" },
