@@ -82,6 +82,9 @@ module.exports = {
           ],
         },
       ],
-    }
+    },
+    footer: {
+      message: '<a href="https://beian.miit.gov.cn/" target="_blank">辽ICP备2022011069号-1</a>',
+    },
   }
 }
