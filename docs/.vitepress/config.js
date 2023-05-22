@@ -81,6 +81,14 @@ module.exports = {
           },
           ],
         },
+        {
+          text: "Vite",
+          items: [{
+            text: "vite.config中使用环境变量",
+            link: "/engineering/vite/vite.config中使用环境变量",
+          },
+          ],
+        },
       ],
     },
     footer: {
