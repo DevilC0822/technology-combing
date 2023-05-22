@@ -18,7 +18,7 @@ module.exports = {
       indexName: 'constj'
     },
     nav: [
-      { text: "vue", link: "/vue/vue" },
+      { text: "vue", link: "/vue/父子组件间的双向绑定" },
       { text: "React", link: "/react/useEffect和useLayoutEffect" },
       { text: "工程化", link: "/engineering/eslint/使用 husky + lint-staged + eslint + commintlint 实现自动化工程增量提交检测" },
     ],
@@ -68,7 +68,10 @@ module.exports = {
       "/vue/": [
         {
           text: "Vue",
-          items: [
+          items: [{
+            text: "父子组件间的双向绑定",
+            link: "/vue/父子组件间的双向绑定",
+          },
           ],
         },
       ],
